@@ -3,7 +3,12 @@
     margin: 3px;
     border-radius: 5px;
     border: solid 5px #F25C05;
-    
+    @media (max-width: 768px) {
+        #encabezado{
+            display: none;
+        }
+        
+    }
 
     .logo{
         border-radius: 5px;

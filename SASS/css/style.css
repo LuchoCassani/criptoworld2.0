@@ -4,6 +4,11 @@
   border-radius: 5px;
   border: solid 5px #F25C05;
 }
+@media (max-width: 768px) {
+  #encabezado #encabezado {
+    display: none;
+  }
+}
 #encabezado .logo {
   border-radius: 5px;
 }
@@ -111,6 +116,45 @@
 }
 #slider img {
   border-radius: 25px;
+}
+
+.start h2 {
+  color: #3E2359;
+  margin-bottom: 25px;
+  position: relative;
+  animation-name: animacion;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+@keyframes animacion {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: -200px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.start .abrir-cuenta button {
+  border: solid 5px #F25C05;
+  color: #3D2473;
+}
+.start .abrir-cuenta button:hover {
+  background-color: #F25C05;
+}
+
+.pie-pagina {
+  color: white;
+  background-color: #3E2359;
 }
 
 /*# sourceMappingURL=style.css.map */
