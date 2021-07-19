@@ -1,0 +1,116 @@
+#encabezado {
+  background-color: #f1f1f1;
+  margin: 3px;
+  border-radius: 5px;
+  border: solid 5px #F25C05;
+}
+#encabezado .logo {
+  border-radius: 5px;
+}
+#encabezado #navbarNav ul li a {
+  font-size: 20px;
+  padding: 1rem;
+  color: #3E2359;
+}
+#encabezado #navbarNav ul li a:hover {
+  color: #F25C05;
+}
+#encabezado .redes i {
+  padding: 4px;
+  font-size: 25px;
+  color: #3E2359;
+}
+#encabezado .redes a i:hover {
+  color: #F25C05;
+}
+@media (max-width: 768px) {
+  #encabezado .redes a i {
+    display: none;
+  }
+}
+
+#presentacion .services {
+  padding-bottom: 20px;
+}
+#presentacion .services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  background: #fff;
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #fff;
+}
+#presentacion .services .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 17px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+#presentacion .services .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+#presentacion .services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+#presentacion .services .title a {
+  color: #111;
+}
+#presentacion .services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+#presentacion .services .icon-box-pink .icon {
+  background: #fceef3;
+}
+#presentacion .services .icon-box-pink .icon i {
+  color: #ff689b;
+}
+#presentacion .services .icon-box-pink:hover {
+  border-color: #ff689b;
+}
+#presentacion .services .icon-box-cyan .icon {
+  background: #e6fdfc;
+}
+#presentacion .services .icon-box-cyan .icon i {
+  color: #3fcdc7;
+}
+#presentacion .services .icon-box-cyan:hover {
+  border-color: #3fcdc7;
+}
+#presentacion .services .icon-box-green .icon {
+  background: #eafde7;
+}
+#presentacion .services .icon-box-green .icon i {
+  color: #41cf2e;
+}
+#presentacion .services .icon-box-green:hover {
+  border-color: #41cf2e;
+}
+#presentacion .services .icon-box-blue .icon {
+  background: #e1eeff;
+}
+#presentacion .services .icon-box-blue .icon i {
+  color: #2282ff;
+}
+#presentacion .services .icon-box-blue:hover {
+  border-color: #2282ff;
+}
+
+#slider {
+  margin: 15px;
+}
+#slider img {
+  border-radius: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

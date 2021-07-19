@@ -1,0 +1,38 @@
+#encabezado{
+    background-color: #f1f1f1;
+    margin: 3px;
+    border-radius: 5px;
+    border: solid 5px #F25C05;
+    
+
+    .logo{
+        border-radius: 5px;
+    }
+    #navbarNav ul li a{
+        font-size: 20px;
+        padding: 1rem;
+        color: #3E2359;
+    }
+    #navbarNav ul li a:hover{
+        color: #F25C05
+    }
+    
+
+    .redes i{
+        padding: 4px;
+        font-size: 25px;
+        color: #3E2359;
+
+    }
+    .redes a i:hover{
+        color: #F25C05;
+    }
+    @media (max-width: 768px) {
+        .redes a i{
+        display: none;
+    }
+        
+    } 
+        
+    
+}
