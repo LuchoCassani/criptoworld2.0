@@ -3,9 +3,9 @@
     margin: 3px;
     border-radius: 5px;
     border: solid 5px #F25C05;
-    @media (max-width: 768px) {
-        #encabezado{
-            display: none;
+    @media (min-width: 768px) {
+        header nav{
+            position:static
         }
         
     }
