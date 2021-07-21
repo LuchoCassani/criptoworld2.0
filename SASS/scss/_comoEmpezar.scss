@@ -1,0 +1,19 @@
+.formulario{
+    background-color: #F25C05;
+    width: 50rem;
+    border: solid 2px #3D2473 ;
+    margin-bottom: 7px;
+    h1{
+        color: #3E2359;
+        text-align: center;
+        
+    }
+    .inputs{
+        padding: 7px;
+        small{
+            display: flex;
+            align-items: flex-end;
+            color:lawngreen
+        }
+    }
+}

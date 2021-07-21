@@ -1,7 +1,8 @@
 #encabezado {
   background-color: #f1f1f1;
-  margin: 3px;
-  border-radius: 5px;
+  margin: 10px;
+  margin-left: 17px;
+  border-radius: 60px;
   border: solid 5px #F25C05;
 }
 @media (min-width: 768px) {
@@ -65,47 +66,25 @@
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  color: #3D2473;
 }
-#presentacion .services .title a {
-  color: #111;
-}
-#presentacion .services .description {
+#presentacion .services .description_color {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+  color: #F27405;
 }
-#presentacion .services .icon-box-pink .icon {
-  background: #fceef3;
-}
-#presentacion .services .icon-box-pink .icon i {
-  color: #ff689b;
+#presentacion .services .description_color--2 {
+  color: #8C4242;
 }
 #presentacion .services .icon-box-pink:hover {
   border-color: #ff689b;
 }
-#presentacion .services .icon-box-cyan .icon {
-  background: #e6fdfc;
-}
-#presentacion .services .icon-box-cyan .icon i {
-  color: #3fcdc7;
-}
 #presentacion .services .icon-box-cyan:hover {
   border-color: #3fcdc7;
 }
-#presentacion .services .icon-box-green .icon {
-  background: #eafde7;
-}
-#presentacion .services .icon-box-green .icon i {
-  color: #41cf2e;
-}
 #presentacion .services .icon-box-green:hover {
   border-color: #41cf2e;
-}
-#presentacion .services .icon-box-blue .icon {
-  background: #e1eeff;
-}
-#presentacion .services .icon-box-blue .icon i {
-  color: #2282ff;
 }
 #presentacion .services .icon-box-blue:hover {
   border-color: #2282ff;
@@ -180,6 +159,25 @@
 }
 .servicios .card p a {
   text-decoration: none;
+}
+
+.formulario {
+  background-color: #F25C05;
+  width: 50rem;
+  border: solid 2px #3D2473;
+  margin-bottom: 7px;
+}
+.formulario h1 {
+  color: #3E2359;
+  text-align: center;
+}
+.formulario .inputs {
+  padding: 7px;
+}
+.formulario .inputs small {
+  display: flex;
+  align-items: flex-end;
+  color: lawngreen;
 }
 
 /*# sourceMappingURL=style.css.map */
