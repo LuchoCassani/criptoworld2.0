@@ -1,0 +1,54 @@
+$color1: white;
+$color2: #F25C05;
+
+#herramientas{
+    background-image: url(../../img/operar-mobile-img.jpg);
+    background-size: cover;
+}
+.titulo{
+    background-color:transparent;
+    color: $color1;
+    border: 2px solid $color2;
+    border-radius: 25px;
+    margin: 20px;
+}
+.titulo--2{
+    margin: 25px;
+    color: $color2;
+}
+
+.web{
+    h3{
+        margin: 25px;
+    }
+}
+
+.lista_1{
+    list-style-type:none;
+    li{
+        margin-bottom: 50px;
+        margin-left: 7px;
+        
+        i{ color: #F25C05;
+           
+        
+        }
+    
+    }
+    
+}
+.lista_2{
+    list-style-type:none;
+    li{
+        margin-bottom: 50px;
+        margin-left: 7px;
+        color: $color1;
+        
+        i{ color: #F25C05;
+           
+        
+        }
+    
+    }
+}
+   
