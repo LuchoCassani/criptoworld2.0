@@ -1,8 +1,14 @@
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ 
 .titulo{
     margin: 20px;
 }
 .servicios{
     .card{
+        height: auto;
         margin: 15px;
         border: solid 5px #F27405;
         img{
