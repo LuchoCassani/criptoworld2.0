@@ -1,20 +1,46 @@
-.formulario{
-    background-color: #F25C05;
-    width: 50rem;
-    border: solid 2px #3D2473 ;
-    margin-bottom: 7px;
-    h1{
-        color: #3E2359;
-        text-align: center;
+// Import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+@mixin borde($border, $radius){
+    border: $border;
+    border-radius: $radius;
+    width: 15rem;
+    height: 2rem;
+    padding: 20px;
+}
+@mixin borde-btn($border, $radius, $color){
+    border: $border;
+    border-radius: $radius;
+    color: $color;
+    background-color: $light-color;
+}
+%form{
+    width: 17rem;
+        margin: 25px auto;
+        padding: 0;
         
-    }
-    .inputs{
-        padding: 7px;
-        small{
-            font-size: 9px;
-            display: flex;
-            align-items: flex-end;
-            color:lawngreen
+}
+// Variables
+$light-color: #F27200;
+$dark-color: #391F67;
+$gray-color: #BBB2CB;
+$main-font: 'Montserrat', sans-serif;
+
+#signup{
+    form{
+        @extend %form;
+        background-color:  mix($light-color, $gray-color);
+        input{
+            margin-top: 12px;
+            margin-bottom: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: $main-font;
+            @include borde(2px,3px )
+        }
+        .btn{
+            @include borde-btn(solid,3px , $dark-color )
+            
         }
     }
 }

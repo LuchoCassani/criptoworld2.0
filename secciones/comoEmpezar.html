@@ -65,115 +65,21 @@
       </nav>
     </header>
     <!--Fin del Menu-->
-    <div class="formulario container-fluid d-flex justify-content-center">
-          <form action="/Clients/AccountOpening" class="container-fluid d-flex justify-content-center" enctype="multipart/form-data" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="lyWrBYjt3VaQFq69nWN_g1-qTlxs7tPHQHxLA8a5Xk9N1IR78yXueDF1fV3fJRay-sSP0m2ZXKfBGpkrPQJyosbQLwd1TvHDAyx1UTUmR-M1" /><input Value="" id="Referred" name="Referred" type="hidden" value="" />
-            <div class="account-opening col-md-6 col-md-offset-3" data-aos="zoom-in">
-              <h1 id="principalTitle" >Apertura de Cuenta</h1>
-              
-              <div class="row">
-                  <div class="col-md-6 inputs">
-                      <div class="form-group animate-label" data-hide="true">
-                          <div class="input-group">
-                              <input TabIndex="1" class="form-control" data-val="true" data-val-required="Debe completar este campo." id="txt_preOpening_name" maxlength="100" name="Name" style="" type="text" value="" />
-                          </div>
-                          <label>Nombres</label>
-                          <small >Como figura en tu DNI</small>
-                      </div>
-                  </div>
-
-                  <div class="col-md-6 inputs">
-                      <div class="form-group animate-label" data-hide="true">
-                          <div class="input-group">
-                              <input TabIndex="2" class="form-control" data-val="true" data-val-required="Debe completar este campo." id="txt_preOpening_lastName" maxlength="100" name="LastName" style="" type="text" value="" />
-                          </div>
-                          <label>Apellidos</label>
-                          <small>Como figura en tu DNI</small>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-6 inputs">
-                      <div id="div_preOpening_DNI" class="form-group animate-label" data-hide="true">
-                          <div class="input-group">
-
-                              <input TabIndex="3" class="form-control" data-mask="99999999" data-val="true" data-val-required="Debe completar este campo." id="txt_openingForm_dni" maxlength="8" name="DNI" type="text" value="" />
-
-                          </div>
-                          <label>DNI</label>
-                          <span class="field-validation-valid" data-valmsg-for="Cuit" data-valmsg-replace="true"></span>
-                          <span id="validateCuit" style="color: #DC0000; display: none"></span>
-                          <span id="duplicateDni" style="color: #DC0000; display: none"></span>
-                      </div>
-
-                  </div>
-                  <div class="col-md-6 inputs">
-                      <div class="form-group animate-label" data-hide="true">
-                          <div class="input-group">
-                              <input TabIndex="4" class="form-control" data-val="true" data-val-email="No es una dirección de correo electrónico valida" data-val-required="Debe completar este campo." id="txt_preOpening_Email" maxlength="100" name="Email" style="" type="text" value="" />
-                          </div>
-                          <label>Email</label>
-                          <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-                          <span id="duplicateEmail" style="color: #DC0000; display: none;"></span>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-6 inputs">
-                      <div class="form-group animate-label show-password-container " data-hide="true">
-                          <div class="input-group">
-                              <input TabIndex="5" class="form-control" data-val="true" data-val-required="Debe completar este campo." id="txt_preOpening_Password" name="Password" type="password" />
-                              <button class="show-password" type="button" id="eye" onclick=" changePasswordsState()" title="Mostrar Contraseña">
-                                  <i class="fa fa-eye"></i>
-                              </button>
-                          </div>
-                          <label>Contraseña</label>
-                              <small>Debe tener por lo menos 1 may&uacute;scula, 1 mi&uacute;scula, 1 n&uacute;mero y m&iacute;nimo 8 caracteres</small>
-                          <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
-                      </div>
-
-                  </div>
-                  <div class="col-md-6 inputs">
-                      <div class="form-group animate-label" data-hide="true">
-                          <div class="input-group">
-                              <input TabIndex="6" class="form-control" data-val="true" data-val-required="Debe completar este campo." id="txt_preOpening_ConfirmPassword" name="ConfirmPassword" type="password" />
-                          </div>
-                          <label>Confirm&aacute; tu contraseña</label>
-                          <span class="field-validation-valid" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
-                      </div>
-                      <div id="txt_preOpening_confirmPasswordError" style="color: red"></div>
-                  </div>
-              </div>
-              <div class="progress" style="margin-top: 10px;">
-                  <div id="div_user_changePassword_passwordStrength" class="progress-bar progress-bar-success"
-                      role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0">
-                  </div>
-              </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Enviar
-              </button>
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Excelente!</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      Revisa tu casilla de email para confirmar la solicitud.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Entendido</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--<div class="buttonContainer text-center">
-                  <div id="divMissingData" style="color: #000000.; margin-bottom: 10px; display: none">Tenés que completar los campos</div>
-                  <center><div class="g-recaptcha" data-sitekey="6LeHw2UUAAAAAN4xat1sDSaiJQw_hf6ApMJVxGnj" data-callback="enableBtn" data-expired-callback="disableBtn"></div></center>
-                  <br />
-                  <input id="btn_preOpening_continue" class="btn btn-success" type="button" value="SIGUIENTE" tabindex="7" />
-              </div> -->
-          </div>
+   
+          <section id="signup" class="bk p-80">
+            <div class="container ">
+              <h3><span class="txt-primary">¡Abri tu cuenta!</span></h3><h4>Dejanos tus datos</h4>
+              <div class="signup-form container d-flex justify-content-center">
+                 <form action="" class="form form-sq-wh d-flex flex-column">
+                  <input type="text" id="name" placeholder="Name">
+                  <input type="email" id="email" placeholder="Email">
+                  <input type="password" placeholder="Password">
+                  <input type="password" placeholder="Confirm Password">
+                  <button class="btn">Sign In</button>
+                </form>
+             </div>
+            </div>
+          </section>
       </form>
     </div>
 

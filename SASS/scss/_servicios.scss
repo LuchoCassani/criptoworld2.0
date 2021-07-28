@@ -5,6 +5,9 @@
  
 .titulo{
     margin: 20px;
+    h1{
+        color: $color;
+    }
 }
 .servicios{
     .card{
@@ -19,10 +22,8 @@
         p a {
             text-decoration: none;
         }
-        @media (max-width: 768px) {
-           p {display: none;
+        .card-body{
             
-           }
         }
     }
 

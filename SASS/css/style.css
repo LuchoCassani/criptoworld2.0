@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 #encabezado {
   background: linear-gradient(#391F67, #FFFFFF);
   margin: 0 auto;
@@ -167,6 +168,9 @@
 .titulo {
   margin: 20px;
 }
+.titulo h1 {
+  color: #F27405;
+}
 
 .servicios .card {
   height: auto;
@@ -181,30 +185,32 @@
 .servicios .card p a {
   text-decoration: none;
 }
-@media (max-width: 768px) {
-  .servicios .card p {
-    display: none;
-  }
+#signup form {
+  width: 17rem;
+  margin: 25px auto;
+  padding: 0;
 }
 
-.formulario {
-  background-color: #F25C05;
-  width: 50rem;
-  border: solid 2px #3D2473;
-  margin-bottom: 7px;
+#signup form {
+  background-color: #d79266;
 }
-.formulario h1 {
-  color: #3E2359;
-  text-align: center;
+#signup form input {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  border: 2px;
+  border-radius: 3px;
+  width: 15rem;
+  height: 2rem;
+  padding: 20px;
 }
-.formulario .inputs {
-  padding: 7px;
-}
-.formulario .inputs small {
-  font-size: 9px;
-  display: flex;
-  align-items: flex-end;
-  color: lawngreen;
+#signup form .btn {
+  border: solid;
+  border-radius: 3px;
+  color: #391F67;
+  background-color: #F27200;
 }
 
 #herramientas {
