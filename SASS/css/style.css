@@ -189,10 +189,23 @@
   width: 17rem;
   margin: 25px auto;
   padding: 0;
+  box-shadow: 10px 5px 5px black;
+}
+
+.contacto {
+  background-image: url(../../img/contacto.jpg);
+  background-size: contain;
+}
+
+.titulo2 {
+  margin-top: 3rem;
+}
+.titulo2 .titulos_contacto {
+  color: #F27200;
 }
 
 #signup form {
-  background-color: #d79266;
+  background-color: #7a6999;
 }
 #signup form input {
   margin-top: 12px;
@@ -211,6 +224,16 @@
   border-radius: 3px;
   color: #391F67;
   background-color: #F27200;
+}
+#signup form .btn:focus {
+  color: red;
+}
+#signup form select option {
+  border: 2px;
+  border-radius: 3px;
+  width: 15rem;
+  height: 2rem;
+  padding: 20px;
 }
 
 #herramientas {
