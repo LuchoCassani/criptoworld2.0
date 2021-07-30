@@ -25,7 +25,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--aos animacion-->
@@ -76,7 +78,27 @@
       </nav>
     </header>
     <!--Fin del Menu-->
-    <main class="container-fluid d-flex w-100" id="slider">
+    <section">
+      <div class="container bd-highlight presentacion ">
+        <div class="p-2 bd-highlight row">
+          <div class="col" data-aos="fade-right" data-aos-duration="1750">
+            <h1 class="quienes_somos">¿Quienes Somos?</h1>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe porro alias, eius reprehenderit nobis quibusdam ut nostrum excepturi minima nihil commodi magnam eveniet, amet reiciendis? Totam omnis esse tempore?
+            </p>
+          </div>  
+          <div class="col"></div>
+        </div>
+        <div class="p-2 bd-highlight row">
+          <div class="col"></div>
+          <div class="col" data-aos="fade-left" data-aos-duration="1750">
+            <h1 class="quienes_somos">¿Que Ofrecemos?</h1>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe porro alias, eius reprehenderit nobis quibusdam ut nostrum excepturi minima nihil commodi magnam eveniet, amet reiciendis? Totam omnis esse tempore?
+            </p>
+          </div> 
+        </div>
+       </div>
+    </section>    
+    <main class="container-fluid d-flex w-100" data-aos="zoom-out" data-aos-duration="2500" id="slider">
       <div class="container d-flex justify-content-center  " id="carousel">
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner d-flex ">
@@ -114,16 +136,9 @@
       </div>
     </div>
     </main>
-    <section class="container-fluid titulos ">
-      <div>
-        <h1 class="titulo_principal d-flex justify-content-center">
-          ¿Quienes Somos?
-        </h1>
-        <p class="titulo_principal-descripcion d-flex justify-content-center">Somos un grupo de expertos apasionados por las finanzas e inversiones, vamos a ayudarte y a guiarte para que puedas convertir tus ahorros en ganancias</p>
-      </div>
-    </section>
+
     <section class="staff_pasos" data-aos="zoom-in-up" data-aos-duration="2000">
-    <div class="staff container-fluid d-flex justify-content-center m-5 " data-aos="zoom-in-right";><h2 style="color: #F27405">Te Presentamos a Nuestros Expertos</h2></div>
+    <div class="staff container-fluid d-flex justify-content-center m-5 " data-aos="zoom-in-right";><h2 class="titulo1">Te Presentamos a Nuestros Expertos</h2></div>
     <main id="presentacion">
       <section class="services">
         <div class="container">
@@ -160,7 +175,7 @@
         </div>
       </section>
       <section class="start container">
-        <div class="container-fluid d-flex justify-content-center "><h2 style="color: #F27405">Estas a solo unos pasos de empezar a invertir</h2></div>
+        <div class="container-fluid d-flex justify-content-center "><h2>Estas a solo unos pasos de empezar a invertir</h2></div>
         <div><img src="img/steps.png" alt="pasos"class= "w-100" data-aos="fade-left"> </div>
         <div class="row">
           <div class="col-3 abrir-cuenta">1. Abrí una cuenta en pocos minutos. 100% online</div>
@@ -177,11 +192,11 @@
 
       </section>
     </section>
-      <div class="pie-pagina container-fluid d-flex justify-content-center">
-        <footer>
+      
+        <footer class="pie-pagina container-fluid d-flex justify-content-center">
           CriptoWorld, todos los derechos reservados 2021
         </footer>
-      </div>
+      
 
   
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

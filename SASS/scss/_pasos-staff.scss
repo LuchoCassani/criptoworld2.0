@@ -1,5 +1,10 @@
 $color: #F27405;
 $color2: #8C4242;
+$font_color: #F25C05;
+%estilo_titulos {
+   font-family: 'Lobster', cursive;
+   color:  #DDEB44;
+}
 
 .staff_pasos{
     background-image: url(../../img/imagenFondo.png);
@@ -7,18 +12,18 @@ $color2: #8C4242;
     background-repeat: no-repeat;
     
 }
-.titulos{
-    background: linear-gradient( #391F67, #FFFFFF);
-  height: 200px;
-
-.titulo_principal{
-  color: $color;
-  font-family: 'Abril Fatface', cursive;
+.titulo1{
+  @extend %estilo_titulos;
+}
+.presentacion{
   
-  
+    .quienes_somos {
+      @extend %estilo_titulos;
+      font-size: 4rem;
+}
 }
 
-}
+
 #presentacion{
     .services {
         padding-bottom: 20px;
@@ -89,7 +94,7 @@ $color2: #8C4242;
 
 .start{
     h2{
-        color: #3E2359;
+        @extend %estilo_titulos;
         margin-bottom: 25px;
         position: relative;
         animation-name: animacion;
@@ -107,8 +112,10 @@ $color2: #8C4242;
     }
 
     .abrir-cuenta{
-        color: $color;
+      font-family: 'Lobster', cursive;
+      color: #F25C05;
         a{
+          font-family: 'Lobster', cursive;
         border: solid 5px #F25C05;
         color: #3D2473;
         }

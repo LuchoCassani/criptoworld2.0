@@ -1,15 +1,28 @@
 
 
 .titulo_cotizacion{
+    
+    padding: 15px;
+    h1{
+        @extend %estilo_titulos;
+    }
 
     .texto{
-        color: tomato;
+        font-family: 'Lobster';
+        color: $font_color;
+        font-size: 20px;
+    }
+}
+.lista_criptos{
+    h3{
+        font-family: 'Lobster';
+        color: $font_color
     }
 }
 .filas{
     border: solid 2px $color2;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 5px;
 }
 .logos{

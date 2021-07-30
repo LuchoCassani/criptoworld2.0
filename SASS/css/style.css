@@ -15,7 +15,6 @@
 #encabezado #navbarNav ul li a {
   font-size: 20px;
   padding: 1rem;
-  color: #3E2359;
 }
 #encabezado #navbarNav ul li a:hover {
   color: #F25C05;
@@ -43,12 +42,18 @@
   border-radius: 25px;
 }
 #slider h5 {
+  font-family: "Lobster", cursive;
   font-size: 25px;
-  color: #F27405;
+  color: #F25C05;
 }
 #slider p {
   font-weight: bolder;
   color: #F25C05;
+}
+
+.titulo_cotizacion h1, .card-box h3, .start h2, .presentacion .quienes_somos, .titulo1, #encabezado #navbarNav ul li a {
+  font-family: "Lobster", cursive;
+  color: #DDEB44;
 }
 
 .staff_pasos {
@@ -57,13 +62,8 @@
   background-repeat: no-repeat;
 }
 
-.titulos {
-  background: linear-gradient(#391F67, #FFFFFF);
-  height: 200px;
-}
-.titulos .titulo_principal {
-  color: #F27405;
-  font-family: "Abril Fatface", cursive;
+.presentacion .quienes_somos {
+  font-size: 4rem;
 }
 
 #presentacion .services {
@@ -122,7 +122,6 @@
 }
 
 .start h2 {
-  color: #3E2359;
   margin-bottom: 25px;
   position: relative;
   animation-name: animacion;
@@ -148,9 +147,11 @@
   }
 }
 .start .abrir-cuenta {
-  color: #F27405;
+  font-family: "Lobster", cursive;
+  color: #F25C05;
 }
 .start .abrir-cuenta a {
+  font-family: "Lobster", cursive;
   border: solid 5px #F25C05;
   color: #3D2473;
 }
@@ -159,32 +160,40 @@
 }
 
 .pie-pagina {
+  margin-top: 15px;
   height: 3rem;
   color: #8C4242;
   background-image: url(../../img/pexels-gradienta-7130564.jpg);
   background-size: cover;
 }
 
-.titulo {
-  margin: 20px;
-}
-.titulo h1 {
-  color: #F27405;
+.servicios {
+  margin-top: 4rem;
+  padding: 25px;
 }
 
-.servicios .card {
-  height: auto;
-  margin: 15px;
-  border: solid 5px #F27405;
+.card-box {
+  border: 1px solid #3E2359;
+  padding: 20px;
+  box-shadow: 0px 0px 30px 0px #3D2473;
+  margin-bottom: 30px;
+  float: left;
+  border-radius: 10px;
 }
-.servicios .card img {
-  margin: 4px;
-  padding: 1rem;
-  background-color: #3D2473;
+.card-box .card-thumbnail {
+  max-height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 1s;
 }
-.servicios .card p a {
+.card-box .card-thumbnail:hover {
+  transform: scale(1.2);
+}
+.card-box h3 a {
+  font-size: 20px;
   text-decoration: none;
 }
+
 #signup form {
   width: 17rem;
   margin: 25px auto;
@@ -281,14 +290,24 @@
   color: #F25C05;
 }
 
+.titulo_cotizacion {
+  padding: 15px;
+}
 .titulo_cotizacion .texto {
-  color: tomato;
+  font-family: "Lobster";
+  color: #F25C05;
+  font-size: 20px;
+}
+
+.lista_criptos h3 {
+  font-family: "Lobster";
+  color: #F25C05;
 }
 
 .filas {
   border: solid 2px #F25C05;
   border-radius: 5px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 5px;
 }
 

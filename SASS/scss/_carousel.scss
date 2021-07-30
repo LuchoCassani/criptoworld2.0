@@ -1,3 +1,6 @@
+$font_color: #F25C05;
+
+
 #slider{
     
     margin: 15px;
@@ -7,11 +10,12 @@
         border-radius: 25px;
     }
     h5{
+        font-family: 'Lobster', cursive;
         font-size: 25px;
-        color: #F27405;
+        color: $font_color;
     }
     p{
         font-weight: bolder;
-        color: #F25C05;
+        color: $font_color;
     }
 }
