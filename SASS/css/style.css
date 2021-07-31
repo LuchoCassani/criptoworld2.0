@@ -36,9 +36,11 @@
 #slider {
   margin: 15px;
 }
+#slider .carousel-item {
+  width: 100%;
+  height: max-content;
+}
 #slider img {
-  height: 500px;
-  width: 300px;
   border-radius: 25px;
 }
 #slider h5 {
@@ -228,6 +230,16 @@
   height: 2rem;
   padding: 20px;
 }
+#signup form select {
+  padding: 0;
+  height: 3rem;
+  width: 15rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+}
 #signup form .btn {
   border: solid;
   border-radius: 3px;
@@ -236,13 +248,6 @@
 }
 #signup form .btn:focus {
   color: red;
-}
-#signup form select option {
-  border: 2px;
-  border-radius: 3px;
-  width: 15rem;
-  height: 2rem;
-  padding: 20px;
 }
 
 #herramientas {

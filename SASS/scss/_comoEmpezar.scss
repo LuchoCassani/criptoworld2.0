@@ -60,6 +60,17 @@ $main-font: 'Montserrat', sans-serif;
             font-family: $main-font;
             @include borde(2px,3px )
         }
+        select{
+            padding: 0;
+            height: 3rem;
+            width: 15rem;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: $main-font;
+            
+        }
         .btn{
             @include borde-btn(solid,3px , $dark-color );
             
@@ -70,12 +81,7 @@ $main-font: 'Montserrat', sans-serif;
             
         }
          
-        select{
-            
-            option{
-                @include borde (2px,3px)
-        }
-        }
+        
     }
     
 }
