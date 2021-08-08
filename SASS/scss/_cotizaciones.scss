@@ -5,7 +5,9 @@
     padding: 15px;
     h1{
         @extend %estilo_titulos;
+        
     }
+
     
 
     .texto{
@@ -55,4 +57,14 @@
 }
 .decrease{
     color: #dc3545;
+}
+@media (max-width: 768px){
+    .lista_criptos h3{
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px){
+    .precio p , .venta p , .increase p , .decrease p {
+        font-size: 13px;
+    }
 }

@@ -78,3 +78,16 @@ $color2: #F25C05;
         width: 100%
     };
 }
+@media (max-width: 768px){
+    .row ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: flex-end;
+    }
+    .app .carousel2{
+        display: none;
+    }
+}

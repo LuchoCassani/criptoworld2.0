@@ -32,16 +32,12 @@ $light-color: #F27200;
 $dark-color: #391F67;
 $gray-color: #BBB2CB;
 $main-font: 'Montserrat', sans-serif;
-.contacto{
-    background-image: url(../../img/contacto.jpg);
-    background-size: contain;
-}
-
+    
 .titulo2{
-        margin-top: 3rem;
+    @extend %estilo_titulos;
 
     .titulos_contacto{
-        color: $light-color;
+        @extend %estilo_titulos;
         
     }
 }

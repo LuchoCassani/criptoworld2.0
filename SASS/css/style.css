@@ -64,7 +64,7 @@
   }
 }
 
-.titulo_cotizacion h1, .titulo, .card-box h3, .start h2, .presentacion .quienes_somos, .titulo1, #encabezado #navbarNav ul li a {
+.titulo_cotizacion h1, .titulo, .titulo2 .titulos_contacto, .titulo2, .card-box h3, .start h2, .presentacion .quienes_somos, .titulo1, #encabezado #navbarNav ul li a {
   font-family: "Lobster", cursive;
   color: #DDEB44;
   text-shadow: 1px 1px black;
@@ -199,6 +199,10 @@
   border: 3px solid #F25C05;
   border-radius: 3px;
   margin-top: 15px;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 .pie-pagina .derechos {
   color: #F25C05;
@@ -255,18 +259,6 @@
   margin: 25px auto;
   padding: 0;
   box-shadow: 10px 5px 5px black;
-}
-
-.contacto {
-  background-image: url(../../img/contacto.jpg);
-  background-size: contain;
-}
-
-.titulo2 {
-  margin-top: 3rem;
-}
-.titulo2 .titulos_contacto {
-  color: #F27200;
 }
 
 #signup form {
@@ -367,6 +359,20 @@
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .row ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .app .carousel2 {
+    display: none;
+  }
+}
 .titulo_cotizacion {
   padding: 15px;
 }
@@ -417,6 +423,16 @@
   color: #dc3545;
 }
 
+@media (max-width: 768px) {
+  .lista_criptos h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .precio p, .venta p, .increase p, .decrease p {
+    font-size: 13px;
+  }
+}
 body {
   background-image: url(../../img/ocean-3605547_1920.jpg);
   height: 100%;
