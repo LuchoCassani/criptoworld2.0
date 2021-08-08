@@ -6,17 +6,26 @@
     h1{
         @extend %estilo_titulos;
     }
+    
 
     .texto{
         font-family: 'Lobster';
         color: $font_color;
-        font-size: 20px;
+        font-size: 25px;
+        text-shadow: 2px 2px black
     }
 }
 .lista_criptos{
     h3{
         font-family: 'Lobster';
-        color: $font_color
+        color: $font_color;
+        font-size: 32px;
+        text-shadow: 2px 2px black
+    }
+    strong{
+        color: white;
+        font-size: 20px;
+        text-shadow: 2px 2px black;
     }
 }
 .filas{
@@ -33,9 +42,11 @@
     };
 }
 .precio , .venta , .increase, .decrease{
-    padding: 8px;
-    text-align: center;
-    
+        padding: 8px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        text-shadow: 2px 2px black
 }
 
 

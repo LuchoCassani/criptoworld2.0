@@ -1,8 +1,28 @@
 .pie-pagina{
+    padding: 5px;
+    box-shadow: 0px 0px 15px 0px #F25C05;
+    border: 3px solid #F25C05;
+    border-radius: 3px;
     margin-top: 15px;
-    height: 3rem;
-    color: $color2;
-    background-image: url(../../img/pexels-gradienta-7130564.jpg);
-    background-size: cover;
+    .derechos{
+        color: #F25C05;
+        p{
+            margin: 5px;
+        }
+    }
+    .redes i{
+        padding: 4px;
+        font-size: 25px;
+        color: #DDEB44;
 
-}
+    }
+    .redes a i:hover{
+        color: #F25C05;
+    }
+   
+
+}   
+     
+    
+ 
+

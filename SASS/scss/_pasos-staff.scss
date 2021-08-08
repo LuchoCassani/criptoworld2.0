@@ -4,22 +4,31 @@ $font_color: #F25C05;
 %estilo_titulos {
    font-family: 'Lobster', cursive;
    color:  #DDEB44;
+   text-shadow: 1px 1px black
 }
 
+  
+
 .staff_pasos{
-    background-image: url(../../img/imagenFondo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    
+    margin: 0;
+    padding: 0;
+    width: 98%
     
 }
 .titulo1{
   @extend %estilo_titulos;
 }
 .presentacion{
-  
+  p{
+    color: $color;
+    font-size: 1,5rem;
+    font-weight: bolder
+  }
     .quienes_somos {
       @extend %estilo_titulos;
       font-size: 4rem;
+      
 }
 }
 
@@ -35,7 +44,7 @@ $font_color: #F25C05;
         overflow: hidden;
         margin: 0  0 40px 0;
         background: #fff;
-        box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+        box-shadow: 0px 0px 15px 0px #F25C05;
         transition: all 0.3s ease-in-out;
         text-align: center;
         border: 1px solid #391F67;
@@ -76,18 +85,23 @@ $font_color: #F25C05;
     
       .services .icon_box-pink:hover {
         border-color: #ff689b;
+        
+        transform: scale(1.1, 1.1);
       }
 
       .services .icon_box-cyan:hover {
         border-color: #3fcdc7;
+        transform: scale(1.1, 1.1)
       }
       
       .services .icon_box-green:hover {
         border-color: #41cf2e;
+        transform: scale(1.1, 1.1)
       }
       
       .services .icon_box-blue:hover {
         border-color: #2282ff;
+        transform: scale(1.1, 1.1)
       }
       
 }
@@ -100,6 +114,7 @@ $font_color: #F25C05;
         animation-name: animacion;
         animation-duration: 3s;
         animation-delay: 1s;
+        animation-iteration-count: infinite ;
         
         @keyframes animacion {
             0%   { left:0px; top:0px;}
@@ -108,16 +123,24 @@ $font_color: #F25C05;
             100% { left:0px; top:0px;}
             
         }
+        @media (max-width: 768px) {
+          animation-iteration-count: 1;
+        }
             
     }
 
     .abrir-cuenta{
+      margin: 0px;
+      padding: 7px;
       font-family: 'Lobster', cursive;
-      color: #F25C05;
+      font-size: 20px;
+      color:  #DDEB44;
+      text-shadow: 1px 1px black;
         a{
           font-family: 'Lobster', cursive;
         border: solid 5px #F25C05;
         color: #3D2473;
+        text-shadow: 1px 1px black;
         }
     }
     .abrir-cuenta a:hover{

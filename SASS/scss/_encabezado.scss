@@ -1,21 +1,27 @@
 #encabezado{
-    background: linear-gradient( #391F67, #FFFFFF);
+    background: transparent;
+    box-shadow: 0px 0px 15px 0px #F25C05;
+    border: 3px solid #F25C05;;
     margin:0 auto;
     ;
     border-radius: 5px;
     ;
-    @media (min-width: 768px) {
-        header nav{
-            position:static
+    @media (max-width: 991px) {
+        
+        .navbar-toggler{
+            background-image: url(../../img/menuHamburgesa.png);
+            background-size: cover;
+            background-position: center center;
         }
         
     }
 
     .logo{
-        border-radius: 5px;
+        box-shadow: 0px 0px 15px 0px #F25C05;
+        border: 3px solid #F25C05;
     }
     #navbarNav ul li a{
-        font-size: 20px;
+        font-size: 30px;
         padding: 1rem;
         @extend %estilo_titulos;
     }
@@ -27,13 +33,13 @@
     .redes i{
         padding: 4px;
         font-size: 25px;
-        color: #3E2359;
+        color: #DDEB44;
 
     }
     .redes a i:hover{
         color: #F25C05;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1058px) {
         .redes a i{
         display: none;
     }

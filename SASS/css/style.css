@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 #encabezado {
-  background: linear-gradient(#391F67, #FFFFFF);
+  background: transparent;
+  box-shadow: 0px 0px 15px 0px #F25C05;
+  border: 3px solid #F25C05;
   margin: 0 auto;
   border-radius: 5px;
 }
-@media (min-width: 768px) {
-  #encabezado header nav {
-    position: static;
+@media (max-width: 991px) {
+  #encabezado .navbar-toggler {
+    background-image: url(../../img/menuHamburgesa.png);
+    background-size: cover;
+    background-position: center center;
   }
 }
 #encabezado .logo {
-  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px #F25C05;
+  border: 3px solid #F25C05;
 }
 #encabezado #navbarNav ul li a {
-  font-size: 20px;
+  font-size: 30px;
   padding: 1rem;
 }
 #encabezado #navbarNav ul li a:hover {
@@ -22,48 +27,60 @@
 #encabezado .redes i {
   padding: 4px;
   font-size: 25px;
-  color: #3E2359;
+  color: #DDEB44;
 }
 #encabezado .redes a i:hover {
   color: #F25C05;
 }
-@media (max-width: 768px) {
+@media (max-width: 1058px) {
   #encabezado .redes a i {
     display: none;
   }
 }
 
-#slider {
-  margin: 15px;
-}
-#slider .carousel-item {
-  width: 100%;
-  height: max-content;
+#slider .carousel-inner {
+  height: 40rem;
 }
 #slider img {
+  width: 100%;
+  height: 100%;
   border-radius: 25px;
 }
 #slider h5 {
   font-family: "Lobster", cursive;
-  font-size: 25px;
+  font-size: 50px;
   color: #F25C05;
+  text-shadow: 1px 3px black;
 }
 #slider p {
   font-weight: bolder;
   color: #F25C05;
+  font-size: 25px;
 }
 
-.titulo_cotizacion h1, .card-box h3, .start h2, .presentacion .quienes_somos, .titulo1, #encabezado #navbarNav ul li a {
+@media (max-width: 768px) {
+  #carouselExampleControls {
+    display: none;
+  }
+}
+
+.titulo_cotizacion h1, .titulo, .card-box h3, .start h2, .presentacion .quienes_somos, .titulo1, #encabezado #navbarNav ul li a {
   font-family: "Lobster", cursive;
   color: #DDEB44;
+  text-shadow: 1px 1px black;
 }
 
 .staff_pasos {
-  background-image: url(../../img/imagenFondo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  width: 98%;
 }
 
+.presentacion p {
+  color: #F27405;
+  font-size: 1, 5rem;
+  font-weight: bolder;
+}
 .presentacion .quienes_somos {
   font-size: 4rem;
 }
@@ -77,7 +94,7 @@
   overflow: hidden;
   margin: 0 0 40px 0;
   background: #fff;
-  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+  box-shadow: 0px 0px 15px 0px #F25C05;
   transition: all 0.3s ease-in-out;
   text-align: center;
   border: 1px solid #391F67;
@@ -112,15 +129,19 @@
 }
 #presentacion .services .icon_box-pink:hover {
   border-color: #ff689b;
+  transform: scale(1.1, 1.1);
 }
 #presentacion .services .icon_box-cyan:hover {
   border-color: #3fcdc7;
+  transform: scale(1.1, 1.1);
 }
 #presentacion .services .icon_box-green:hover {
   border-color: #41cf2e;
+  transform: scale(1.1, 1.1);
 }
 #presentacion .services .icon_box-blue:hover {
   border-color: #2282ff;
+  transform: scale(1.1, 1.1);
 }
 
 .start h2 {
@@ -129,6 +150,7 @@
   animation-name: animacion;
   animation-duration: 3s;
   animation-delay: 1s;
+  animation-iteration-count: infinite;
 }
 @keyframes animacion {
   0% {
@@ -148,25 +170,49 @@
     top: 0px;
   }
 }
+@media (max-width: 768px) {
+  .start h2 {
+    animation-iteration-count: 1;
+  }
+}
 .start .abrir-cuenta {
+  margin: 0px;
+  padding: 7px;
   font-family: "Lobster", cursive;
-  color: #F25C05;
+  font-size: 20px;
+  color: #DDEB44;
+  text-shadow: 1px 1px black;
 }
 .start .abrir-cuenta a {
   font-family: "Lobster", cursive;
   border: solid 5px #F25C05;
   color: #3D2473;
+  text-shadow: 1px 1px black;
 }
 .start .abrir-cuenta a:hover {
   background-color: #F25C05;
 }
 
 .pie-pagina {
+  padding: 5px;
+  box-shadow: 0px 0px 15px 0px #F25C05;
+  border: 3px solid #F25C05;
+  border-radius: 3px;
   margin-top: 15px;
-  height: 3rem;
-  color: #8C4242;
-  background-image: url(../../img/pexels-gradienta-7130564.jpg);
-  background-size: cover;
+}
+.pie-pagina .derechos {
+  color: #F25C05;
+}
+.pie-pagina .derechos p {
+  margin: 5px;
+}
+.pie-pagina .redes i {
+  padding: 4px;
+  font-size: 25px;
+  color: #DDEB44;
+}
+.pie-pagina .redes a i:hover {
+  color: #F25C05;
 }
 
 .servicios {
@@ -175,12 +221,20 @@
 }
 
 .card-box {
-  border: 1px solid #3E2359;
+  border: 3px solid #F25C05;
   padding: 20px;
-  box-shadow: 0px 0px 30px 0px #3D2473;
+  box-shadow: 0px 0px 15px 0px #F25C05;
   margin-bottom: 30px;
   float: left;
   border-radius: 10px;
+}
+.card-box .texto_card {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+.card-box h3 {
+  color: #F25C05;
 }
 .card-box .card-thumbnail {
   max-height: 200px;
@@ -250,49 +304,67 @@
   color: red;
 }
 
-#herramientas {
-  background-image: url(../../img/operar-mobile-img.jpg);
-  background-size: cover;
-}
-
 .titulo {
-  background-color: transparent;
-  color: white;
-  border: 2px solid #F25C05;
-  border-radius: 25px;
-  margin: 20px;
+  margin-top: 15px;
 }
 
 .titulo--2 {
-  margin: 25px;
+  font-family: "Lobster";
   color: #F25C05;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
 }
 
-.web h3 {
+.web h3, .app h3 {
   margin: 25px;
+  color: #F25C05;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
 }
 
 .lista_1 {
   list-style-type: none;
 }
 .lista_1 li {
-  margin-bottom: 50px;
-  margin-left: 7px;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  margin: 2px;
 }
 .lista_1 li i {
-  color: #F25C05;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  margin: 4px;
 }
 
 .lista_2 {
   list-style-type: none;
 }
 .lista_2 li {
-  margin-bottom: 50px;
-  margin-left: 7px;
   color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  margin: 2px;
 }
 .lista_2 li i {
-  color: #F25C05;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  margin: 4px;
+}
+
+.app .carousel-item {
+  height: 40rem;
+  width: 20rem;
+  min-height: 300px;
+  padding: 0;
+  margin: 0;
+}
+.app img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
 }
 
 .titulo_cotizacion {
@@ -301,12 +373,20 @@
 .titulo_cotizacion .texto {
   font-family: "Lobster";
   color: #F25C05;
-  font-size: 20px;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
 }
 
 .lista_criptos h3 {
   font-family: "Lobster";
   color: #F25C05;
+  font-size: 32px;
+  text-shadow: 2px 2px black;
+}
+.lista_criptos strong {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
 }
 
 .filas {
@@ -324,6 +404,9 @@
 .precio, .venta, .increase, .decrease {
   padding: 8px;
   text-align: center;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
 }
 
 .increase {
@@ -332,6 +415,19 @@
 
 .decrease {
   color: #dc3545;
+}
+
+body {
+  background-image: url(../../img/ocean-3605547_1920.jpg);
+  height: 100%;
+  /* You must set a specified height */
+  background-position: center center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #669996;
 }
 
 /*# sourceMappingURL=style.css.map */
