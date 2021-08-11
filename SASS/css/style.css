@@ -62,7 +62,7 @@
   }
 }
 
-.titulo_cotizacion h1, .titulo, .titulo2 .titulos_contacto, .titulo2, .card-box h3, .start h2, .presentacion .quienes_somos, .titulo1, #encabezado #navbarNav ul li a, #slider p {
+.titulo_cotizacion h1, .titulo, .titulo2 .titulos_contacto, .titulo2, .card-box h3, .servicios .titulo_servicios, .start h2, .presentacion .quienes_somos, .titulo1, #encabezado #navbarNav ul li a, #slider p {
   font-family: "Lobster", cursive;
   color: #DDEB44;
   text-shadow: 1px 1px black;
@@ -220,6 +220,10 @@
 .servicios {
   margin-top: 4rem;
   padding: 25px;
+}
+.servicios .titulo_servicios {
+  margin: 0;
+  padding: 3px;
 }
 
 .card-box {

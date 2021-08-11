@@ -6,6 +6,12 @@ $font_color: #F25C05;
 .servicios{
     margin-top: 4rem;
     padding: 25px;
+    .titulo_servicios{
+        @extend %estilo_titulos;
+        margin: 0;
+        padding: 3px;
+        
+    }
 }
 .card-box {
     border: 3px solid #F25C05;
