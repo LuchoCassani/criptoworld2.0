@@ -4,11 +4,11 @@ $font_color: #F25C05;
 
 
 .servicios{
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding: 25px;
     .titulo_servicios{
         @extend %estilo_titulos;
-        margin: 0;
+        margin-bottom: 15px;
         padding: 3px;
         
     }

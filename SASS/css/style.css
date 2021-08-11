@@ -218,11 +218,11 @@
 }
 
 .servicios {
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 25px;
 }
 .servicios .titulo_servicios {
-  margin: 0;
+  margin-bottom: 15px;
   padding: 3px;
 }
 
