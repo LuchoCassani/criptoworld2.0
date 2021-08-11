@@ -8,7 +8,7 @@ $font_color: #F25C05;
 }
 
   
-
+//presentacion de la pagina ubicado arriba del carousel//
 .staff_pasos{
     
     margin: 0;
@@ -31,7 +31,7 @@ $font_color: #F25C05;
       
 }
 }
-
+//presentacion de nuestro staff, ubicado debajo del carousel//
 
 #presentacion{
     .services {
@@ -105,7 +105,7 @@ $font_color: #F25C05;
       }
       
 }
-
+//pasos para empezar a operar//
 .start{
     h2{
         @extend %estilo_titulos;
@@ -115,7 +115,7 @@ $font_color: #F25C05;
         animation-duration: 3s;
         animation-delay: 1s;
         animation-iteration-count: infinite ;
-        
+          
         @keyframes animacion {
             0%   { left:0px; top:0px;}
             25%  { left:200px; top:0px;}

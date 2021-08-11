@@ -1,9 +1,10 @@
 body{
     background-image: url(../../img/ocean-3605547_1920.jpg);
-    height: 100%; /* You must set a specified height */
-    background-position: center center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100%; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
     background-size: cover; 
     background-attachment: fixed;
     background-color: #669996;
+    padding: 0;
 }

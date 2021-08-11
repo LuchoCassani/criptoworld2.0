@@ -1,3 +1,5 @@
+//carousel de la pagina principal//
+
 $font_color: #F25C05;
 
 #slider{
@@ -22,8 +24,7 @@ $font_color: #F25C05;
         text-shadow: 1px 3px black;
     }
     p{  
-        font-weight: bolder;
-        color: $font_color;
+        @extend %estilo_titulos;
         font-size: 25px;
     }
     
