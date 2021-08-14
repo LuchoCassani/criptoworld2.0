@@ -1,4 +1,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+body {
+  background-image: url(../../img/ocean-3605547_1920.jpg);
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #669996;
+  padding: 0;
+}
+
+#slider .carousel-inner {
+  height: 40rem;
+}
+#slider img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+#slider h5 {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  color: #F25C05;
+  text-shadow: 1px 3px black;
+}
+#slider p {
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  #carouselExampleControls {
+    display: none;
+  }
+}
+
+#signup form {
+  width: 17rem;
+  margin: 25px auto;
+  padding: 0;
+  box-shadow: 10px 5px 5px black;
+}
+
+#signup form {
+  background-color: #7a6999;
+}
+#signup form input {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  border: 2px;
+  border-radius: 3px;
+  width: 15rem;
+  height: 2rem;
+  padding: 20px;
+}
+#signup form select {
+  padding: 0;
+  height: 3rem;
+  width: 15rem;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+}
+#signup form .btn {
+  border: solid;
+  border-radius: 3px;
+  color: #391F67;
+  background-color: #F27200;
+}
+#signup form .btn:focus {
+  color: red;
+}
+
+.titulo_cotizacion {
+  padding: 15px;
+}
+.titulo_cotizacion .texto {
+  font-family: "Lobster";
+  color: #F25C05;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
+}
+
+.lista_criptos h3 {
+  font-family: "Lobster";
+  color: #F25C05;
+  font-size: 32px;
+  text-shadow: 2px 2px black;
+}
+.lista_criptos strong {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+
+.filas {
+  border: solid 2px #dc3545;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+.logos img {
+  width: 6rem;
+  padding: 8px;
+}
+
+.precio, .venta, .increase, .decrease {
+  padding: 8px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+
+.increase {
+  color: #198754;
+}
+
+.decrease {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .lista_criptos h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .precio p, .venta p, .increase p, .decrease p {
+    font-size: 13px;
+  }
+}
 #encabezado {
   background: transparent;
   box-shadow: 0px 0px 15px 0px #F25C05;
@@ -38,31 +175,109 @@
   }
 }
 
-#slider .carousel-inner {
-  height: 40rem;
-}
-#slider img {
+.pie-pagina {
+  padding: 1rem;
+  box-shadow: 0px 0px 15px 0px #F25C05;
+  border: 3px solid #F25C05;
+  border-radius: 3px;
+  margin-top: 15px;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100%;
-  border-radius: 25px;
 }
-#slider h5 {
-  font-family: "Lobster", cursive;
-  font-size: 50px;
+.pie-pagina .derechos {
   color: #F25C05;
-  text-shadow: 1px 3px black;
 }
-#slider p {
+.pie-pagina .derechos p {
+  margin: 5px;
+}
+.pie-pagina .redes i {
+  padding: 4px;
   font-size: 25px;
+  color: #DDEB44;
+}
+.pie-pagina .redes a i:hover {
+  color: #F25C05;
+}
+
+.titulo {
+  margin-top: 15px;
+}
+
+.titulo--2 {
+  font-family: "Lobster";
+  color: #F25C05;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
+}
+
+.web h3, .app h3 {
+  margin: 25px;
+  color: #F25C05;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
+}
+
+.lista_1 {
+  list-style-type: none;
+}
+.lista_1 li {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  margin: 2px;
+}
+.lista_1 li i {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  margin: 4px;
+}
+
+.lista_2 {
+  list-style-type: none;
+}
+.lista_2 li {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  margin: 2px;
+}
+.lista_2 li i {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  margin: 4px;
+}
+
+.app .carousel-item {
+  height: 40rem;
+  width: 20rem;
+  min-height: 300px;
+  padding: 0;
+  margin: 0;
+}
+.app img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
-  #carouselExampleControls {
+  .row ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .app .carousel2 {
     display: none;
   }
 }
-
-.titulo_cotizacion h1, .titulo, .titulo2 .titulos_contacto, .titulo2, .card-box h3, .servicios .titulo_servicios, .start h2, .presentacion .quienes_somos, .titulo1, #encabezado #navbarNav ul li a, #slider p {
+.card-box h3, .servicios .titulo_servicios, .start h2, .presentacion .quienes_somos, .titulo1, #slider p, .titulo2, .titulo2 .titulos_contacto, .titulo_cotizacion h1, #encabezado #navbarNav ul li a, .titulo {
   font-family: "Lobster", cursive;
   color: #DDEB44;
   text-shadow: 1px 1px black;
@@ -191,32 +406,6 @@
   background-color: #F25C05;
 }
 
-.pie-pagina {
-  padding: 1rem;
-  box-shadow: 0px 0px 15px 0px #F25C05;
-  border: 3px solid #F25C05;
-  border-radius: 3px;
-  margin-top: 15px;
-  position: static;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-.pie-pagina .derechos {
-  color: #F25C05;
-}
-.pie-pagina .derechos p {
-  margin: 5px;
-}
-.pie-pagina .redes i {
-  padding: 4px;
-  font-size: 25px;
-  color: #DDEB44;
-}
-.pie-pagina .redes a i:hover {
-  color: #F25C05;
-}
-
 .servicios {
   margin-top: 2rem;
   padding: 25px;
@@ -254,196 +443,6 @@
 .card-box h3 a {
   font-size: 20px;
   text-decoration: none;
-}
-
-#signup form {
-  width: 17rem;
-  margin: 25px auto;
-  padding: 0;
-  box-shadow: 10px 5px 5px black;
-}
-
-#signup form {
-  background-color: #7a6999;
-}
-#signup form input {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Montserrat", sans-serif;
-  border: 2px;
-  border-radius: 3px;
-  width: 15rem;
-  height: 2rem;
-  padding: 20px;
-}
-#signup form select {
-  padding: 0;
-  height: 3rem;
-  width: 15rem;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Montserrat", sans-serif;
-}
-#signup form .btn {
-  border: solid;
-  border-radius: 3px;
-  color: #391F67;
-  background-color: #F27200;
-}
-#signup form .btn:focus {
-  color: red;
-}
-
-.titulo {
-  margin-top: 15px;
-}
-
-.titulo--2 {
-  font-family: "Lobster";
-  color: #F25C05;
-  font-size: 25px;
-  text-shadow: 2px 2px black;
-}
-
-.web h3, .app h3 {
-  margin: 25px;
-  color: #F25C05;
-  font-size: 25px;
-  text-shadow: 2px 2px black;
-}
-
-.lista_1 {
-  list-style-type: none;
-}
-.lista_1 li {
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px black;
-  margin: 2px;
-}
-.lista_1 li i {
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px black;
-  margin: 4px;
-}
-
-.lista_2 {
-  list-style-type: none;
-}
-.lista_2 li {
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px black;
-  margin: 2px;
-}
-.lista_2 li i {
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px black;
-  margin: 4px;
-}
-
-.app .carousel-item {
-  height: 40rem;
-  width: 20rem;
-  min-height: 300px;
-  padding: 0;
-  margin: 0;
-}
-.app img {
-  border-radius: 5px;
-  height: 100%;
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  .row ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: flex-end;
-  }
-
-  .app .carousel2 {
-    display: none;
-  }
-}
-.titulo_cotizacion {
-  padding: 15px;
-}
-.titulo_cotizacion .texto {
-  font-family: "Lobster";
-  color: #F25C05;
-  font-size: 25px;
-  text-shadow: 2px 2px black;
-}
-
-.lista_criptos h3 {
-  font-family: "Lobster";
-  color: #F25C05;
-  font-size: 32px;
-  text-shadow: 2px 2px black;
-}
-.lista_criptos strong {
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px black;
-}
-
-.filas {
-  border: solid 2px #F25C05;
-  border-radius: 5px;
-  margin: 20px auto;
-  padding: 5px;
-}
-
-.logos img {
-  width: 6rem;
-  padding: 8px;
-}
-
-.precio, .venta, .increase, .decrease {
-  padding: 8px;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px black;
-}
-
-.increase {
-  color: #198754;
-}
-
-.decrease {
-  color: #dc3545;
-}
-
-@media (max-width: 768px) {
-  .lista_criptos h3 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .precio p, .venta p, .increase p, .decrease p {
-    font-size: 13px;
-  }
-}
-body {
-  background-image: url(../../img/ocean-3605547_1920.jpg);
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #669996;
-  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
